@@ -1,0 +1,77 @@
+
+<div class="menu">
+  <div class="main-content">
+    <div fxLayout="row" fxLayoutAlign="center" class="menuComponent">
+
+      <button [matMenuTriggerFor]="menu1" mat-button>Home</button>
+      <mat-menu #menu1="matMenu">
+        <button mat-menu-item [routerLink]="['/home']">Home</button>
+      </mat-menu>
+
+      <button [matMenuTriggerFor]="menu2" mat-button>Portador</button>
+      <mat-menu #menu2="matMenu">
+        <button mat-menu-item [routerLink]="['/portador']">Listagem de Portadores</button>
+        <button mat-menu-item [routerLink]="['/cadastrarPortador']">Cadastrar Portador</button>
+      </mat-menu>
+
+      <button [matMenuTriggerFor]="menu3" mat-button>Assistencia</button>
+      <mat-menu #menu3="matMenu">
+        <button mat-menu-item [routerLink]="['/assistencia']">Listagem de Assistencias</button>
+      </mat-menu>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <mat-card class="example-card">
+    <!--    fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center"-->
+    <h2 class="texto_azul titulo-login">FAÇA SEU CADASTRO</h2>
+
+    <!--Inicio do Form>-->
+    <mat-card-content >
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">Nome</mat-label>
+          <input autocomplete="on" name="nome" [(ngModel)]="portador.nome" matInput placeholder="digite deu nome">
+        </mat-form-field>
+
+        <!--Name-->
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">CPF</mat-label>
+          <input autocomplete="on" name="cpf" type="text"  [(ngModel)]="portador.cpf" matInput  placeholder="Digite o seu CPF"value="">
+        </mat-form-field>
+
+        <!--Telefone-->
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">Telefone</mat-label>
+          <input autocomplete="on" name="telefone" type="text"[(ngModel)]="portador.telefone" matInput placeholder="Digite o número do seu telefone" value="">
+        </mat-form-field>
+
+        <!--assistencia_id_assistencia-->
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">Codigo da assistencia</mat-label>
+          <input autocomplete="on" name="assistencia" type="text" [(ngModel)]="portador.assistencia_id_assistencia" matInput  placeholder="Código da assistencia"value="" >
+        </mat-form-field>
+
+        <!--Faturamento-->
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">Dia do faturamento</mat-label>
+          <input autocomplete="on" name="dia_faturamento" type="text"[(ngModel)]="portador.diaFaturamento" matInput placeholder="dia do faturamento" value="">
+        </mat-form-field>
+
+        <!--Adesao-->
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label class="texto_azul">adesao_ativa</mat-label>
+          <input autocomplete="on" name="adesao_ativa" type="text" [(ngModel)]="portador.adesaoAtiva" matInput  placeholder="adesao_ativa"value="" >
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button mat-icon-button color="blue" (click)="inserirPortador()">
+        <mat-icon *ngIf="operacaoCadastro">person_add</mat-icon>
+        <mat-icon *ngIf="!operacaoCadastro">edit</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

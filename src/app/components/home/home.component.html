@@ -1,0 +1,270 @@
+<div class="geral">
+  <div class="menu">
+    <div class="main-content">
+      <div fxLayout="row" fxLayoutAlign="center" class="menuComponent">
+
+        <button [matMenuTriggerFor]="menu1" mat-button>Home</button>
+        <mat-menu #menu1="matMenu">
+          <button mat-menu-item [routerLink]="['/home']">Home</button>
+        </mat-menu>
+
+        <button [matMenuTriggerFor]="menu2" mat-button>Portador</button>
+        <mat-menu #menu2="matMenu">
+          <button mat-menu-item [routerLink]="['/portador']">Listagem de Portadores</button>
+          <button mat-menu-item [routerLink]="['/cadastrarPortador']">Cadastrar Portador</button>
+        </mat-menu>
+
+        <button [matMenuTriggerFor]="menu3" mat-button>Assistencia</button>
+        <mat-menu #menu3="matMenu">
+          <button mat-menu-item [routerLink]="['/assistencia']">Listagem de Assistencias</button>
+        </mat-menu>
+        </div>
+      </div>
+    </div>
+
+  <!--<div fxLayout="row" fxLayoutAlign="space-around center" >-->
+
+  <!--  <mat-card class="example-card">-->
+  <!--    <mat-card-header>-->
+  <!--      <div mat-card-avatar class="example-header-image"></div>-->
+  <!--      <mat-card-title>Shiba Inu</mat-card-title>-->
+  <!--      <mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+  <!--    </mat-card-header>-->
+  <!--    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+  <!--    <mat-card-content>-->
+  <!--      <p>-->
+  <!--        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.-->
+  <!--        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally-->
+  <!--        bred for hunting.-->
+  <!--      </p>-->
+  <!--    </mat-card-content>-->
+  <!--    <mat-card-actions>-->
+  <!--      <button mat-button>LIKE</button>-->
+  <!--      <button mat-button>SHARE</button>-->
+  <!--    </mat-card-actions>-->
+  <!--  </mat-card>-->
+  <!--<div>-->
+  <!--  <mdb-carousel [animation]="'slide'">-->
+  <!--    <mdb-carousel-item>-->
+  <!--      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).webp" alt="First slide">-->
+  <!--    </mdb-carousel-item>-->
+  <!--    <mdb-carousel-item>-->
+  <!--      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).webp" alt="Second slide">-->
+  <!--    </mdb-carousel-item>-->
+  <!--    <mdb-carousel-item>-->
+  <!--      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).webp" alt="Third slide">-->
+  <!--    </mdb-carousel-item>-->
+  <!--  </mdb-carousel>-->
+  <!--               *************************************************              -->
+    <!--               *************************************************              -->
+    <!--               *************************************************              -->
+  <div>
+    <!--      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).webp" alt="First slide">-->
+    <img class="d-block w-100" src="../../../assets/image/slide1.png" alt="First slide" style="width: 100%; max-height: 550px;" >
+
+  </div>
+  <!--<div fxLayout="row" fxLayoutAlign="space-around center" >-->
+
+  <!--  <mat-card class="example-card">-->
+  <!--    <mat-card-header>-->
+  <!--      <div mat-card-avatar class="example-header-image"></div>-->
+  <!--      <mat-card-title>Shiba Inu</mat-card-title>-->
+  <!--      <mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+  <!--    </mat-card-header>-->
+  <!--    <img  mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu" >-->
+  <!--    <mat-card-content>-->
+  <!--      <p>-->
+  <!--        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.-->
+  <!--        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally-->
+  <!--        bred for hunting.-->
+  <!--      </p>-->
+  <!--    </mat-card-content>-->
+  <!--    <mat-card-actions>-->
+  <!--      <button mat-button>LIKE</button>-->
+  <!--      <button mat-button>SHARE</button>-->
+  <!--    </mat-card-actions>-->
+  <!--  </mat-card>-->
+
+
+  <!--</div>-->
+
+
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="flex-direction: row; box-sizing: border-box; padding-top: 80px; padding-bottom: 50px" >
+
+<!--    <mat-card class="example-card">-->
+<!--      <img id="odon" mat-card-image src="assets/image/seguro.JPG" alt="Photo of a Shiba Inu">-->
+<!--      <mat-card-content>-->
+<!--        <mat-card-subtitle>Seguro</mat-card-subtitle>-->
+<!--        <p> Alto seguro com valor que cabe dentro do seu bolso</p>-->
+<!--        <p></p>-->
+<!--        <p>Oferta:  4,99 mensal</p>-->
+<!--      </mat-card-content>-->
+<!--      <mat-card-actions>-->
+<!--        <button mat-button>LIKE</button>-->
+<!--        <button mat-button>SHARE</button>-->
+<!--      </mat-card-actions>-->
+<!--    </mat-card>-->
+
+
+    <mat-card class="example-card">
+      <img  mat-card-image src="assets/image/bolsa.jpg" >
+      <mat-card-content>
+        <mat-card-subtitle>Seguro a furtos</mat-card-subtitle>
+        <p >
+          Garantimos ao segurado o ressarcimento dos valores dos itens que forem roubados ou furtados.
+        </p>
+        <p></p>
+        <p>Oferta:  13,50 mensal</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="example-card">
+      <img  mat-card-image src="assets/image/celular.JPG" >
+      <mat-card-content>
+        <mat-card-subtitle>Seguro a furtos</mat-card-subtitle>
+        <p >
+          Proteção Completa para te Deixar Despreocupado. Venha conhcer nossas ofertas!  </p>
+        <p></p>
+        <p>Oferta:  19,50 mensal</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+<!--    <mat-card class="example-card">-->
+<!--      <img mat-card-image src="assets/image/ODONTO.png" alt="Photo of a Shiba Inu">-->
+<!--      <mat-card-actions>-->
+<!--        <button mat-button>LIKE</button>-->
+<!--        <button mat-button>SHARE</button>-->
+<!--      </mat-card-actions>-->
+<!--    </mat-card>-->
+
+<!--    <div class="card">-->
+<!--      <mat-card class="example-card">-->
+<!--        <mat-card-title-group>-->
+<!--          <mat-card-title>Shiba Inu</mat-card-title>-->
+<!--          <mat-card-subtitle>Small</mat-card-subtitle>-->
+<!--          <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >-->
+<!--        </mat-card-title-group>-->
+<!--        <mat-card-content>-->
+<!--          {{longText}}-->
+<!--        </mat-card-content>-->
+<!--      </mat-card>-->
+<!--    </div>-->
+
+
+<!--    <div class="card">-->
+<!--      <mat-card class="example-card3">-->
+<!--        <mat-card-title-group>-->
+<!--          <mat-card-title>Shiba Inu</mat-card-title>-->
+<!--          <mat-card-subtitle>Small</mat-card-subtitle>-->
+<!--          <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >-->
+<!--        </mat-card-title-group>-->
+<!--        <mat-card-content>-->
+<!--          {{longText}}-->
+<!--        </mat-card-content>-->
+<!--      </mat-card>-->
+<!--    </div>-->
+
+    <mat-card class="example-card">
+      <img  mat-card-image src="assets/image/odon.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <mat-card-subtitle>Saude</mat-card-subtitle>
+        <p id="aa">
+          Para um sorriso mais bonito e saudável conheça nosso seguro ortodôntico.
+        </p>
+        <p></p>
+        <p>Oferta:  4,99 mensal</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+
+
+  </div>
+
+<!--  <div class="card1">-->
+<!--    <mat-card id="aaa" style="height: 250px;">-->
+<!--&lt;!&ndash;      <mat-card-title-group>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <mat-card-title>Shiba Inu</mat-card-title>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <mat-card-subtitle>Small</mat-card-subtitle>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <img mat-card-sm-image src="assets/image/odon.jpg" >&ndash;&gt;-->
+<!--&lt;!&ndash;      </mat-card-title-group>&ndash;&gt;-->
+<!--      <mat-card-title-group>-->
+<!--      </mat-card-title-group>-->
+<!--      <mat-card-content id="text">-->
+<!--        Nós da Seguro Fácil trabalhamos para mante-los seguro. Cadastre-se agora com ofertas imperdiveis !-->
+<!--      </mat-card-content>-->
+<!--     <button mat-button-item id="color" [routerLink]="['/cadastrarPortador']">Clique aqui e cadastre-se</button>-->
+<!--    </mat-card>-->
+<!--  </div>-->
+
+
+
+  <div class="card1">
+<!--    <mat-card id="aaa" style="height: 250px;">-->
+<!--      <mat-card-title-group>-->
+<!--      </mat-card-title-group>-->
+<!--      <mat-card-content id="text">-->
+<!--        Nós da Seguro Fácil trabalhamos para mante-los seguro. Cadastre-se agora com ofertas imperdiveis !-->
+
+<!--      </mat-card-content>-->
+<!--      <button mat-button-item id="color" [routerLink]="['/cadastrarPortador']">Clique aqui e cadastre-se</button>-->
+<!--    </mat-card>-->
+    <mat-card id="aaa" style="height: 250px;">
+      <mat-card-title-group>
+        <mat-card-title>Nós da Seguro Fácil trabalhamos para mante-los seguro. Cadastre-se agora com ofertas imperdiveis !</mat-card-title>
+        <!--     <mat-card-subtitle>Extra large</mat-card-subtitle>-->
+        <mat-card-subtitle>
+          <button mat-button-item id="color" [routerLink]="['/cadastrarPortador']">Clique aqui e cadastre-se</button>
+        </mat-card-subtitle>
+        <img mat-card-xl-image src="assets/image/banner2.png" width="200px" >
+
+      </mat-card-title-group>
+    </mat-card>
+  </div>
+
+  <footer class="rodape-prin">
+    <span>&copy; SeguroFacil 2017</span>
+    <ul class="icones-sociais">
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/32/facebook-icon.png" alt="Icone do facebook"></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><img src="https://icons.iconarchive.com/icons/martz90/circle/32/instagram-icon.png" alt="Icone do instagram"></a></li>
+      <li><a href="https://twitter.com/" target="_blank"><img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/32/twitter-icon.png" alt="Icone do twiter"></a></li>
+    </ul>
+
+  </footer>
+</div>
+
+<!--    <mat-card class="example-card">-->
+<!--      <mat-card-content>-->
+<!--        <mat-card-title>Plano Fidelidade</mat-card-title>-->
+<!--        <mat-card-subtitle>A Seguro Facil esta com mais uma novidade o plano Fidelidade </mat-card-subtitle>-->
+<!--        <p>São inumeras as vatagens para se tornar cliente fidelidade, como participação em sorteios, acumulo de pontos, promoções relampagos,-->
+<!--          entre outras vantagens, entre em contato para mais informações! </p>-->
+<!--      </mat-card-content>-->
+
+<!--    </mat-card>-->
+
+
+
+<!--    <mat-card class="example-card">-->
+<!--      <mat-card-title>Shiba Inu</mat-card-title>-->
+<!--      <mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+<!--      <mat-card-content>-->
+<!--        <p>This card indeterminates progress bar.</p>-->
+<!--        <p>{{longText}}</p>-->
+<!--      </mat-card-content>-->
+<!--      <mat-card-actions>-->
+<!--        <button mat-button>LIKE</button>-->
+<!--        <button mat-button>SHARE</button>-->
+<!--      </mat-card-actions>-->
+<!--    </mat-card>-->
